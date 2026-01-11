@@ -10,13 +10,13 @@ function changeWeb(type) {
     * */
     switch (type) {
         case "cppkalku":
-            window.location.replace("https://github.com/MagmaZ3637/MSwitchCaseCPP")
+            window.location.replace("http://103.186.167.18:8002/rpl3/game/rocket_league/")
             break
         case "webku":
-            window.location.replace("https://github.com/MagmaZ3637/TremegoKeuangan")
+            window.location.replace("http://103.186.167.18:8002/rpl3/laravel/kaggleFeri/")
             break
         default:
-            window.location.replace("https://github.com/Ferr-Hanni/Halaman-Login")
+            window.location.replace("http://103.186.167.18:8002/rpl3/laravel/pengepul-meme/public/memes")
     }
 }
 
