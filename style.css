@@ -1,35 +1,39 @@
-.nafbar-kelaz {
+/* Navbar link hover effect */
+.nav-link-hover {
     transition: ease-out 10ms;
     border-bottom: 2px solid rgba(237, 132, 12, 0);
 }
 
-.nafbar-kelaz:hover {
+.nav-link-hover:hover {
     transition: ease-in 10ms;
     border-bottom: 2px solid #ed840c;
 }
 
-.buton {
+/* Button styling */
+.btn-primary-custom {
     background-color: #e6b449
 }
 
-.yoi {
-    transform: rotate(360deg);
-}
-
-.yoi:hover {
-    transform: rotate(360deg);
-}
-
-.buton:hover {
+.btn-primary-custom:hover {
     background-color: #e6be5f
 }
 
-.rowr-on {
+/* Heading shadow effect */
+.heading-shadow {
+    transform: rotate(360deg);
+}
+
+.heading-shadow:hover {
+    transform: rotate(360deg);
+}
+
+/* Dropdown icon rotation */
+.dropdown-icon-rotate-on {
     transform: rotate(180deg);
     transition: ease-in 1s;
 }
 
-.rowr-off {
+.dropdown-icon-rotate-off {
     transform: rotate(0deg);
     transition: ease-out 1s;
 }
