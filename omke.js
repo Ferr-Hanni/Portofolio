@@ -74,7 +74,7 @@ function setTranslateEnabled() {
 // Initialize EmailJS when page loads
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize EmailJS with your Public Key
-    emailjs.init("Nz7EOLCcUn8uJcsiN");
+    emailjs.init("Nz7EQLCcWn0ujcsin");
     
     // Handle form submission
     const contactForm = document.getElementById('contactForm');
