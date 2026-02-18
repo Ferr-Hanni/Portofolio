@@ -70,11 +70,13 @@ function setTranslateEnabled() {
     isTranslateClicked = !isTranslateClicked;
 }
 
-// ===== PERBAIKAN EMAILJS CONTACT FORM =====
+// ===== EMAILJS CONTACT FORM =====
+// Initialize EmailJS when page loads
 document.addEventListener('DOMContentLoaded', function() {
-    // Inisialisasi EmailJS
+    // Initialize EmailJS with your Public Key
     emailjs.init("Nz7EQLCcWn0ujcsin");
     
+    // Handle form submission
     const contactForm = document.getElementById('contactForm');
     const submitBtn = document.getElementById('submitBtn');
     const alertMessage = document.getElementById('alertMessage');
@@ -83,33 +85,52 @@ document.addEventListener('DOMContentLoaded', function() {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
             
+            // Disable button and show loading
             submitBtn.disabled = true;
             submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>Mengirim...';
             
+            // Get form data
             const formData = {
                 user_name: document.getElementById('user_name').value,
                 user_email: document.getElementById('user_email').value,
                 message: document.getElementById('message').value
             };
             
-            // Mengirim email
+            // Send email using EmailJS
             emailjs.send('service_jlkxbjd', 'template_beqfhmy', formData)
                 .then(function(response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    
+                    // Show success message
                     alertMessage.className = 'alert alert-success mt-3';
                     alertMessage.style.display = 'block';
-                    alertMessage.innerHTML = '<strong>Berhasil!</strong> Pesan Anda telah terkirim.';
+                    alertMessage.innerHTML = '<strong>Berhasil!</strong> Pesan Anda telah terkirim. Terima kasih!';
+                    
+                    // Reset form
                     contactForm.reset();
-                })
-                .catch(function(error) {
-                    console.error('FAILED...', error);
+                    
+                    // Hide message after 5 seconds
+                    setTimeout(() => {
+                        alertMessage.style.display = 'none';
+                    }, 5000);
+                    
+                }, function(error) {
+                    console.log('FAILED...', error);
+                    
+                    // Show error message
                     alertMessage.className = 'alert alert-danger mt-3';
                     alertMessage.style.display = 'block';
-                    alertMessage.innerHTML = '<strong>Gagal!</strong> Error: ' + JSON.stringify(error);
+                    alertMessage.innerHTML = '<strong>Gagal!</strong> Terjadi kesalahan. Silakan coba lagi.';
+                    
+                    // Hide message after 5 seconds
+                    setTimeout(() => {
+                        alertMessage.style.display = 'none';
+                    }, 5000);
                 })
                 .finally(function() {
+                    // Re-enable button
                     submitBtn.disabled = false;
                     submitBtn.innerHTML = 'Kirim';
-                    setTimeout(() => { alertMessage.style.display = 'none'; }, 5000);
                 });
         });
     }
