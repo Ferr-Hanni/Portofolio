@@ -37,3 +37,232 @@
     transform: rotate(0deg);
     transition: ease-out 1s;
 }
+
+/* Navbar link hover effect */
+.nav-link-hover {
+    transition: ease-out 10ms;
+    border-bottom: 2px solid rgba(237, 132, 12, 0);
+}
+
+.nav-link-hover:hover {
+    transition: ease-in 10ms;
+    border-bottom: 2px solid #ed840c;
+}
+
+/* Button styling */
+.btn-primary-custom {
+    background-color: #e6b449
+}
+
+.btn-primary-custom:hover {
+    background-color: #e6be5f
+}
+
+/* Heading shadow effect */
+.heading-shadow {
+    transform: rotate(360deg);
+}
+
+.heading-shadow:hover {
+    transform: rotate(360deg);
+}
+
+/* Dropdown icon rotation */
+.dropdown-icon-rotate-on {
+    transform: rotate(180deg);
+    transition: ease-in 1s;
+}
+
+.dropdown-icon-rotate-off {
+    transform: rotate(0deg);
+    transition: ease-out 1s;
+}
+
+/* ===== RESPONSIVE MOBILE STYLES ===== */
+
+/* Jumbotron Split Screen */
+@media (max-width: 768px) {
+    #home .container {
+        padding-top: 80px !important;
+        padding-bottom: 40px !important;
+    }
+    
+    #home .row {
+        min-height: auto !important;
+    }
+    
+    #home img {
+        max-width: 250px !important;
+        margin-bottom: 30px;
+    }
+    
+    #home h1 {
+        font-size: 2.5rem !important;
+    }
+    
+    #home h4 {
+        font-size: 1.2rem !important;
+    }
+    
+    #home p.lead {
+        font-size: 1rem !important;
+    }
+}
+
+/* About Section Two Column */
+@media (max-width: 991px) {
+    #about .row.g-4 {
+        gap: 2rem !important;
+    }
+}
+
+@media (max-width: 768px) {
+    #about {
+        padding: 60px 0 !important;
+    }
+    
+    #about h1 {
+        font-size: 2rem !important;
+    }
+    
+    #about h3 {
+        font-size: 1.5rem !important;
+    }
+    
+    #about .col-lg-6 .bg-white {
+        padding: 1.5rem !important;
+    }
+    
+    /* Skills icons smaller on mobile */
+    #about .row.text-center img {
+        width: 50px !important;
+    }
+}
+
+/* Projects Section */
+@media (max-width: 768px) {
+    #projects {
+        padding: 60px 0 !important;
+    }
+    
+    #projects h1 {
+        font-size: 2rem !important;
+        margin-top: 2rem !important;
+        margin-bottom: 2rem !important;
+    }
+    
+    #projects .card h3 {
+        font-size: 1.3rem !important;
+    }
+}
+
+/* Pendidikan Timeline */
+@media (max-width: 768px) {
+    #pendidikan {
+        padding: 60px 0 !important;
+    }
+    
+    #pendidikan h1 {
+        font-size: 2rem !important;
+    }
+    
+    /* Timeline adjustments for mobile */
+    #pendidikan .d-flex .me-4 {
+        min-width: 60px !important;
+    }
+    
+    #pendidikan .rounded-circle {
+        width: 50px !important;
+        height: 50px !important;
+    }
+    
+    #pendidikan .rounded-circle svg {
+        width: 24px !important;
+        height: 24px !important;
+    }
+    
+    #pendidikan .mx-auto {
+        height: 80px !important;
+    }
+    
+    #pendidikan .bg-white {
+        padding: 1rem !important;
+    }
+    
+    #pendidikan h4 {
+        font-size: 1.2rem !important;
+    }
+    
+    #pendidikan .badge {
+        font-size: 0.8rem !important;
+    }
+}
+
+/* Contact Section */
+@media (max-width: 768px) {
+    #contact {
+        padding: 60px 0 !important;
+    }
+    
+    #contact h1 {
+        font-size: 2rem !important;
+    }
+    
+    #contact p {
+        font-size: 1rem !important;
+    }
+}
+
+/* Small mobile adjustments */
+@media (max-width: 576px) {
+    #home h1 {
+        font-size: 2rem !important;
+    }
+    
+    #home h5 {
+        font-size: 1rem !important;
+    }
+    
+    #home .btn-lg {
+        font-size: 1rem !important;
+        padding: 0.5rem 1.5rem !important;
+    }
+    
+    /* Timeline even more compact */
+    #pendidikan .d-flex .me-4 {
+        min-width: 50px !important;
+    }
+    
+    #pendidikan .rounded-circle {
+        width: 45px !important;
+        height: 45px !important;
+    }
+    
+    #pendidikan .rounded-circle svg {
+        width: 20px !important;
+        height: 20px !important;
+    }
+    
+    #pendidikan .mx-auto {
+        height: 70px !important;
+        width: 2px !important;
+    }
+}
+
+/* Extra responsive helpers */
+@media (max-width: 480px) {
+    .container {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+    
+    #about .col-4 {
+        flex: 0 0 33.333% !important;
+        max-width: 33.333% !important;
+    }
+    
+    #about .col-6 {
+        flex: 0 0 50% !important;
+        max-width: 50% !important;
+    }
+}
