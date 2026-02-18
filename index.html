@@ -51,56 +51,185 @@
 </nav>
 <!--navbar-->
 
-<!--jumbotron-->
-<section id="home">
-    <div class="text-center" style="background-color: #c3b2ec; font-family: serif">
-        <div class="py-5"></div>
-        <img class="d-block mx-auto mb-4 img-thumbnail" style="border-radius: 50%" src="assets/images/fotoku.jpeg" alt="" width="200" height="100">
-        <h1 class="display-5 text-body-emphasis fw-bolder">Feri Ferdianto</h1>
-        <div class="col-lg-6 mx-auto">
-            <p style="margin-bottom: -30px" class="lead"></p>
-            <!--<a type="button" href="https://github.com/MagmaZ3637" class="btn btn-dark my-5">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" style="margin-bottom: 2px; margin-right: 5px" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
-                </svg>
-                Github
-            </a>-->
-        </div>
-        <svg style="margin-bottom: -50px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#498efb" fill-opacity="1" d="M0,64L48,69.3C96,75,192,85,288,117.3C384,149,480,203,576,229.3C672,256,768,256,864,224C960,192,1056,128,1152,96C1248,64,1344,64,1392,64L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
-    </div>
-</section>
-<!--jumbotron-->
-
-<!--about-->
-<section id="about" style="background-color: #498efb">
-    <div class="container my-5">
-        <div class="row text-center">
-            <div class="col">
-                <h1 class="fw-bolder" style="font-family: serif" style="background-color: #fcedc2">Tentang</h1>
+<!--jumbotron split screen-->
+<section id="home" style="background-color: #c3b2ec; min-height: 100vh; padding-bottom: 0;">
+    <div class="container" style="padding-top: 100px; padding-bottom: 60px;">
+        <div class="row align-items-center" style="min-height: 85vh;">
+            <!-- Kolom Kiri - Foto -->
+            <div class="col-lg-5 col-md-6 text-center mb-4 mb-md-0">
+                <img class="shadow-lg" 
+                     style="border-radius: 50%; max-width: 350px; width: 100%; border: 6px solid #2e4bff;" 
+                     src="assets/images/fotoku.jpeg" 
+                     alt="Feri Ferdianto">
+            </div>
+            
+            <!-- Kolom Kanan - Teks -->
+            <div class="col-lg-7 col-md-6">
+                <h5 class="mb-2" style="font-weight: normal; color: #555;">Halo, Saya</h5>
+                <h1 class="display-3 fw-bolder mb-3" style="color: #2e4bff;">Feri Ferdianto</h1>
+                <h4 class="mb-4" style="color: #333;">Siswa SMKN 5 Malang | Jurusan PPLG</h4>
+                <p class="lead mb-4" style="color: #555; font-size: 1.1rem; line-height: 1.7;">
+                    Seorang pelajar yang tertarik dengan pengembangan web dan terus belajar 
+                    teknologi baru untuk mengembangkan kemampuan coding.
+                </p>
+                <div class="d-flex flex-wrap gap-2">
+                    <a href="#projects" class="btn btn-lg px-4 buton" style="background-color: #2e4bff; color: white;">
+                        Lihat Projek
+                    </a>
+                    <a href="#contact" class="btn btn-outline-primary btn-lg px-4" style="border-color: #2e4bff; color: #2e4bff; border-width: 2px;">
+                        Hubungi Saya
+                    </a>
+                </div>
             </div>
         </div>
-        <div style="font-family: serif; font-weight: normal" class="fs-5 row text-center my-5 justify-content-between">
-            <div class="col my-5">
-               Perkenalkan nama saya Feri Ferdianto. Saya adalah siswa SMK 5 MALANG jurusan PPLG, Bahasa Pemrograman yang saya masih kuasai adalah: html, css, dan javascript
-                <div class="row">
-                    <div class="col my-4">
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
-                             alt="CSS" width="50px">
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
-                             alt="CSS" width="50px">
+    </div>
+</section>
+<!--jumbotron split screen-->
+
+<!--about two column-->
+<section id="about" style="background-color: #498efb; padding: 80px 0;">
+    <div class="container">
+        <div class="row text-center mb-5">
+            <div class="col">
+                <h1 class="fw-bolder" style="font-family: serif; color: white;">Tentang Saya</h1>
+            </div>
+        </div>
+        
+        <div class="row g-4">
+            <!-- Kolom Kiri - Tentang Diri & Hobi -->
+            <div class="col-lg-6">
+                <div class="bg-white rounded shadow p-4 h-100">
+                    <h3 class="fw-bold mb-3" style="color: #2e4bff;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-person-circle me-2" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                        </svg>
+                        Profil Singkat
+                    </h3>
+                    <p class="mb-3 fs-5" style="line-height: 1.8;">
+                        Perkenalkan, nama saya <strong>Feri Ferdianto</strong>. Saya adalah siswa 
+                        <strong>SMKN 5 Malang</strong> jurusan <strong>PPLG (Pengembangan Perangkat Lunak dan Gim)</strong>.
+                    </p>
+                    <p class="mb-4 fs-5" style="line-height: 1.8;">
+                        Saya sangat tertarik dengan dunia pemrograman web dan selalu antusias untuk 
+                        mempelajari teknologi baru. Saat ini saya fokus mengembangkan kemampuan 
+                        frontend development.
+                    </p>
+                    
+                    <h5 class="fw-bold mt-4 mb-3" style="color: #2e4bff;">Hobi & Minat:</h5>
+                    <ul class="list-unstyled fs-6">
+                        <li class="mb-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#2e4bff" class="bi bi-check-circle-fill me-2" viewBox="0 0 16 16">
+                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                            </svg>
+                            Coding & Web Development
+                        </li>
+                        <li class="mb-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#2e4bff" class="bi bi-check-circle-fill me-2" viewBox="0 0 16 16">
+                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                            </svg>
+                            Belajar teknologi baru
+                        </li>
+                        <li class="mb-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#2e4bff" class="bi bi-check-circle-fill me-2" viewBox="0 0 16 16">
+                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                            </svg>
+                            Menyelesaikan projek sekolah
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Kolom Kanan - Technical Skills & Tools -->
+            <div class="col-lg-6">
+                <div class="bg-white rounded shadow p-4 h-100">
+                    <h3 class="fw-bold mb-3" style="color: #2e4bff;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-code-slash me-2" viewBox="0 0 16 16">
+                            <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0"/>
+                        </svg>
+                        Kemampuan Teknis
+                    </h3>
+                    
+                    <h5 class="fw-bold mb-3" style="color: #555;">Bahasa Pemrograman:</h5>
+                    <div class="row mb-4 text-center">
+                        <div class="col-4 mb-3">
+                            <div class="p-3 rounded" style="background-color: #f8f9fa;">
+                                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" 
+                                     alt="HTML" width="60px" class="mb-2">
+                                <p class="mb-0 fw-semibold">HTML5</p>
+                            </div>
+                        </div>
+                        <div class="col-4 mb-3">
+                            <div class="p-3 rounded" style="background-color: #f8f9fa;">
+                                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" 
+                                     alt="CSS" width="60px" class="mb-2">
+                                <p class="mb-0 fw-semibold">CSS3</p>
+                            </div>
+                        </div>
+                        <div class="col-4 mb-3">
+                            <div class="p-3 rounded" style="background-color: #f8f9fa;">
+                                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" 
+                                     alt="JavaScript" width="60px" class="mb-2">
+                                <p class="mb-0 fw-semibold">JavaScript</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h5 class="fw-bold mb-3" style="color: #555;">Tools & Framework:</h5>
+                    <div class="row">
+                        <div class="col-6 mb-3">
+                            <div class="d-flex align-items-center p-2 rounded" style="background-color: #f8f9fa;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#7952b3" class="bi bi-bootstrap-fill me-2" viewBox="0 0 16 16">
+                                    <path d="M6.375 7.125V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375z"/>
+                                    <path d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4zm1.06 12V3.545h3.399c1.587 0 2.543.809 2.543 2.11 0 .884-.65 1.675-1.483 1.816v.1c1.143.117 1.904.931 1.904 2.033 0 1.488-1.084 2.396-2.888 2.396z"/>
+                                </svg>
+                                <span class="fw-semibold">Bootstrap</span>
+                            </div>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <div class="d-flex align-items-center p-2 rounded" style="background-color: #f8f9fa;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#F05032" class="bi bi-git me-2" viewBox="0 0 16 16">
+                                    <path d="M15.698 7.287 8.712.302a1.03 1.03 0 0 0-1.457 0l-1.45 1.45 1.84 1.84a1.223 1.223 0 0 1 1.55 1.56l1.773 1.774a1.224 1.224 0 0 1 1.267 2.025 1.226 1.226 0 0 1-2.002-1.334L8.58 5.963v4.353a1.226 1.226 0 1 1-1.008-.036V5.887a1.226 1.226 0 0 1-.666-1.608L5.093 2.465l-4.79 4.79a1.03 1.03 0 0 0 0 1.457l6.986 6.986a1.03 1.03 0 0 0 1.457 0l6.953-6.953a1.03 1.03 0 0 0 0-1.457"/>
+                                </svg>
+                                <span class="fw-semibold">Git</span>
+                            </div>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <div class="d-flex align-items-center p-2 rounded" style="background-color: #f8f9fa;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FF2D20" viewBox="0 0 24 24" class="me-2">
+                                    <path d="M23.642 5.43a.364.364 0 0 1 .014.1v5.149c0 .135-.073.26-.189.326l-4.323 2.49v4.934a.378.378 0 0 1-.188.326L9.93 23.949a.316.316 0 0 1-.066.027c-.008.002-.016.008-.024.01a.348.348 0 0 1-.192 0c-.011-.002-.02-.008-.03-.012-.02-.008-.042-.014-.062-.025L.533 18.755a.376.376 0 0 1-.189-.326V2.974c0-.033.005-.066.014-.098.003-.012.01-.02.014-.032a.369.369 0 0 1 .023-.058c.004-.013.015-.022.023-.033l.033-.045c.012-.01.025-.018.037-.027.014-.012.027-.024.041-.034H.53L5.043.05a.375.375 0 0 1 .375 0L9.93 2.647h.002c.015.01.027.021.04.033l.038.027c.013.014.02.03.033.045.008.011.02.021.025.033.01.02.017.038.024.058.003.011.01.021.013.032.01.031.014.064.014.098v9.652l3.76-2.164V5.527c0-.033.004-.066.013-.098.003-.01.01-.02.013-.032a.487.487 0 0 1 .024-.059c.007-.012.018-.02.024-.033.012-.015.021-.03.033-.043.012-.012.025-.02.037-.028.014-.01.026-.023.041-.032h.001l4.513-2.598a.375.375 0 0 1 .375 0l4.513 2.598c.016.01.027.021.042.031.012.01.025.018.036.028.013.014.022.03.034.044.008.012.019.021.024.033.01.02.017.038.024.058.006.012.01.022.015.033zm-.74 5.032V6.179l-1.578.908-2.182 1.256v4.283zm-4.51 7.75v-4.287l-2.147 1.225-6.126 3.498v4.325zM1.093 3.624v14.588l8.273 4.761v-4.325l-4.322-2.445-.002-.003H5.04c-.014-.01-.025-.021-.04-.031-.011-.01-.024-.018-.035-.027l-.001-.002c-.013-.012-.021-.025-.031-.04-.01-.011-.021-.022-.028-.036h-.002c-.008-.014-.013-.031-.02-.047-.006-.016-.014-.027-.018-.043a.49.49 0 0 1-.008-.057c-.002-.014-.006-.027-.006-.041V5.789l-2.18-1.257zM5.23.81 1.47 2.974l3.76 2.164 3.758-2.164zm1.956 13.505 2.182-1.256V3.624l-1.58.91-2.182 1.255v9.435zm11.581-10.95-3.76 2.163 3.76 2.163 3.759-2.164zm-.376 4.978-2.182-1.256-1.579-.908v4.283l2.182 1.256 1.58.908zm-8.65 9.654 5.514-3.148 2.756-1.572-3.757-2.163-4.323 2.489-3.941 2.27z"/>
+                                </svg>
+                                <span class="fw-semibold">Laravel</span>
+                            </div>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <div class="d-flex align-items-center p-2 rounded" style="background-color: #f8f9fa;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000" class="bi bi-github me-2" viewBox="0 0 16 16">
+                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                                </svg>
+                                <span class="fw-semibold">GitHub</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-3 p-3 rounded" style="background-color: #e6b449;">
+                        <p class="mb-0 text-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-lightbulb-fill me-2" viewBox="0 0 16 16">
+                                <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m3 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1-.5-.5"/>
+                            </svg>
+                            <em style="color: white;">Terus belajar dan berkembang</em>
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!--about-->
+<!--about two column-->
 
 <!--projects-->
-<section id="projects" style="background-color: #c3b2ec">
-    <div>
-        <svg style="margin-top: -50px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#498efb" fill-opacity="1" d="M0,64L48,69.3C96,75,192,85,288,117.3C384,149,480,203,576,229.3C672,256,768,256,864,224C960,192,1056,128,1152,96C1248,64,1344,64,1392,64L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
-        <div class="container">
+<section id="projects" style="background-color: #c3b2ec; padding: 80px 0;">
+    <div class="container">
             <div class="row text-center">
                 <div class="col">
                     <h1 class="fw-bolder my-5" style="font-family: serif" style="background-color: #fcedc2">Projek</h1>
