@@ -9,6 +9,8 @@
     <link rel="icon" type="image/x-icon" href="assets/images/logo.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <script src="omke.js"></script>
 </head>
@@ -69,8 +71,8 @@
                 <h1 class="display-3 fw-bolder mb-3" style="color: #2e4bff;">Feri Ferdianto</h1>
                 <h4 class="mb-4" style="color: #333;">Siswa SMKN 5 Malang | Jurusan PPLG</h4>
                 <p class="lead mb-4" style="color: #555; font-size: 1.1rem; line-height: 1.7;">
-                    Seorang pelajar yang tertarik dengan pengembangan web dan terus belajar 
-                    teknologi baru untuk mengembangkan kemampuan coding.
+                    Seorang pelajar yang ingin memperlajari dunia bahasa pemrograman dan terus belajar 
+                    teknologi baru seperti Ai, dan terus mengembangkan kemampuan skill coding.
                 </p>
                 <div class="d-flex flex-wrap gap-2">
                     <a href="#projects" class="btn btn-lg px-4 buton" style="background-color: #2e4bff; color: white;">
@@ -113,7 +115,7 @@
                     <p class="mb-4 fs-5" style="line-height: 1.8;">
                         Saya sangat tertarik dengan dunia pemrograman web dan selalu antusias untuk 
                         mempelajari teknologi baru. Saat ini saya fokus mengembangkan kemampuan 
-                        Front-End Development.
+                        frontend development.
                     </p>
                     
                     <h5 class="fw-bold mt-4 mb-3" style="color: #2e4bff;">Hobi & Minat:</h5>
@@ -143,7 +145,7 @@
             <!-- Kolom Kanan - Technical Skills & Tools -->
             <div class="col-lg-6">
                 <div class="bg-white rounded shadow p-4 h-100">
-                    <h3 class="fw-bold mb-3" style="color: #1a83e6;">
+                    <h3 class="fw-bold mb-3" style="color: #2e4bff;">
                         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-code-slash me-2" viewBox="0 0 16 16">
                             <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0"/>
                         </svg>
@@ -370,26 +372,35 @@
     </div>
 </section>
 <!--pendidikan-->
-<section id="contact" style="background-color: #c3b2ec">
+<section id="contact" style="background-color: #c3b2ec; padding: 80px 0;">
     <div class="container col-xl-10 col-xxl-8 px-4">
-        <div class="row align-items-center g-lg-5 py-5">
+        <div class="row align-items-center g-lg-5">
             <div class="col-lg-7 text-center text-lg-start">
-                <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">Kontak Saya</h1>
-                <p class="col-lg-10 fs-4">Berikan pendapat tentang website ini</p>
+                <h1 class="display-4 fw-bold lh-1 mb-3">Kontak Saya</h1>
+                <p class="col-lg-10 fs-4">Jika ada saran atau masukan, silakan kirimkan melalui form berikut</p>
             </div>
             <div class="col-md-10 mx-auto col-lg-5">
-                <form method="post" class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
+                <form id="contactForm" class="p-4 p-md-5 border rounded-3 bg-white shadow">
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" name="email" required>
-                        <label for="floatingInput">Email</label>
+                        <input type="text" class="form-control" id="user_name" placeholder="Nama Anda" name="user_name" required>
+                        <label for="user_name">Nama</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="floatingPassword" placeholder="Pesan Anda" name="pesan" required>
-                        <label for="floatingPassword">Pesan</label>
+                        <input type="email" class="form-control" id="user_email" placeholder="name@example.com" name="user_email" required>
+                        <label for="user_email">Email</label>
                     </div>
-                    <button class="w-100 btn btn-lg buton" type="submit" name="send">Kirim</button>
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" id="message" placeholder="Pesan Anda" name="message" style="height: 100px" required></textarea>
+                        <label for="message">Pesan</label>
+                    </div>
+                    <button class="w-100 btn btn-lg" type="submit" id="submitBtn" style="background-color: #2e4bff; color: white;">Kirim</button>
                     <hr class="my-4">
-                    <small class="text-body-secondary">Jangan masukkan data penting di kotak input.</small>
+                    <small class="text-body-secondary">* Pesan ini akan terkirim ke Email saya, jadi cek kembali Email anda
+                        jika ingin melihat balasan dari saya. Terima kasih sudah mengunjungi website saya!
+                    </small>
+                    
+                    <!-- Alert Success/Error -->
+                    <div id="alertMessage" class="alert mt-3" style="display: none;" role="alert"></div>
                 </form>
             </div>
         </div>
