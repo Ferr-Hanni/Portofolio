@@ -16,10 +16,10 @@
 </head>
 <body style="font-family: serif">
 <!--navbar-->
-<nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top" style="background-color: #2e4bff">
+<nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top navbar-main" id="mainNavbar">
     <div class="container">
         <a class="navbar-brand fs-5" href="#">Feri Ferdianto</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -34,16 +34,13 @@
                     <a class="nav-link nav-link-hover" href="#projects">Projek</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link" onclick="omkeGasm()" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" onclick="omkeGasm()" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Lebih Banyak
-                        <svg style="margin-bottom: 3px" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" id="ikondrop" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
-                            <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
-                        </svg>
                     </a>
-                    <ul class="dropdown-menu" style="margin-left: -45px">
+                    <ul class="dropdown-menu dropdown-menu-end">
                         <li><a class="dropdown-item" href="#pendidikan">Pendidikan</a></li>
                         <li><a class="dropdown-item" href="#contact">Kontak saya</a></li>
-                        <li><hr class="dropdown-icon-rotate-off"></li>
+                        <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="index2.html">Pergi ke Portofolio selanjutnya</a></li>
                     </ul>
                 </li>

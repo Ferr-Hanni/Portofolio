@@ -118,6 +118,24 @@
     transition: ease-out 1s;
 }
 
+/* ===== NAVBAR MAIN STYLES ===== */
+.navbar-main {
+    background-color: #2e4bff;
+    transition: background-color 0.35s ease, box-shadow 0.35s ease;
+}
+
+.navbar-main.scrolled {
+    background-color: rgba(25, 40, 180, 0.95);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.25) !important;
+}
+
+/* Navbar toggler no outline */
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
 /* ===== DROPDOWN MENU STYLING ===== */
 .dropdown-menu {
     background-color: white;
@@ -138,22 +156,42 @@
 /* Mobile navbar dropdown fix */
 @media (max-width: 991px) {
     .navbar-collapse {
-        background-color: #2e4bff;
-        padding: 15px;
-        margin-top: 10px;
+        background-color: rgba(30, 50, 200, 0.97);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        padding: 12px 16px 16px;
+        margin-top: 8px;
+        border-radius: 12px;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+        /* smooth slide animation */
+        transition: all 0.3s ease;
+    }
+    
+    .navbar-collapse .nav-link {
+        padding: 10px 8px;
         border-radius: 8px;
+        transition: background-color 0.2s ease;
+    }
+
+    .navbar-collapse .nav-link:hover,
+    .navbar-collapse .nav-link:focus {
+        background-color: rgba(255,255,255,0.12);
     }
     
     .dropdown-menu {
-        background-color: rgba(255, 255, 255, 0.95);
+        background-color: rgba(255, 255, 255, 0.96);
         border: none;
-        margin-top: 10px !important;
+        border-radius: 10px;
+        margin-top: 4px !important;
         margin-left: 0 !important;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.15);
     }
     
     .dropdown-item {
         padding: 12px 20px;
         font-size: 0.95rem;
+        border-radius: 8px;
+        transition: background-color 0.15s ease;
     }
     
     .dropdown-divider {
