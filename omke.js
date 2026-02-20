@@ -1,22 +1,14 @@
+// Fungsi navigasi projek
 function changeWeb(type) {
-    if (type === Number) {
-        window.location.href = "404.php"
-    }
-    /*
-    * ada 3 pilihan coi
-    * - trim (default)
-    * - cppkalku
-    * - webku
-    * */
     switch (type) {
         case "cppkalku":
-            window.location.replace("http://103.186.167.18:8002/rpl3/game/rocket_league/")
-            break
+            window.location.replace("http://103.186.167.18:8002/rpl3/game/rocket_league/");
+            break;
         case "webku":
-            window.location.replace("http://103.186.167.18:8002/rpl3/laravel/kaggleFeri/")
-            break
+            window.location.replace("http://103.186.167.18:8002/rpl3/laravel/kaggleFeri/");
+            break;
         default:
-            window.location.replace("http://103.186.167.18:8002/rpl3/laravel/pengepul-meme/public/memes")
+            window.location.replace("http://103.186.167.18:8002/rpl3/laravel/pengepul-meme/public/memes");
     }
 }
 
@@ -40,17 +32,18 @@ if (alertTrigger) {
     })
 }
 
-let isClicked = false
+// Fungsi animasi icon dropdown
+let isClicked = false;
 function omkeGasm() {
-    const icon = document.getElementById("ikondrop")
+    const icon = document.getElementById("ikondrop");
     if (isClicked) {
-        isClicked = false
-        icon.style.transform = "rotate(0deg)"
-        icon.style.transition = "ease-in 0.2s"
+        isClicked = false;
+        icon.style.transform = "rotate(0deg)";
+        icon.style.transition = "ease-in 0.2s";
     } else {
-        isClicked = true
-        icon.style.transform = "rotate(180deg)"
-        icon.style.transition = "ease-out 0.2s"
+        isClicked = true;
+        icon.style.transform = "rotate(180deg)";
+        icon.style.transition = "ease-out 0.2s";
     }
 }
 
@@ -64,10 +57,6 @@ function translate() {
         isTranslateClicked = true
         el_anu.write("<img src='https://hatscripts.github.io/circle-flags/flags/us.svg' width='20' />")
     }
-}
-
-function setTranslateEnabled() {
-    isTranslateClicked = !isTranslateClicked;
 }
 
 // ===== EMAILJS CONTACT FORM =====
