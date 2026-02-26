@@ -14,7 +14,8 @@
     <link rel="stylesheet" href="style.css">
     <script src="omke.js"></script>
 </head>
-<body style="font-family: serif">
+<body class="body-serif">
+
 <!--navbar-->
 <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top navbar-main" id="mainNavbar">
     <div class="container">
@@ -51,31 +52,30 @@
 <!--navbar-->
 
 <!--jumbotron split screen-->
-<section id="home" style="background-color: #c3b2ec; min-height: 100vh; padding-bottom: 0;">
-    <div class="container" style="padding-top: 100px; padding-bottom: 60px;">
-        <div class="row align-items-center" style="min-height: 85vh;">
+<section id="home" class="section-home">
+    <div class="container home-container">
+        <div class="row align-items-center home-row">
             <!-- Kolom Kiri - Foto -->
             <div class="col-lg-5 col-md-6 text-center mb-4 mb-md-0">
-                <img class="shadow-lg" 
-                     style="border-radius: 50%; max-width: 350px; width: 100%; border: 6px solid #2e4bff;" 
-                     src="assets/images/fotoku.jpeg" 
+                <img class="shadow-lg profile-img"
+                     src="assets/images/fotoku.jpeg"
                      alt="Feri Ferdianto">
             </div>
-            
+
             <!-- Kolom Kanan - Teks -->
             <div class="col-lg-7 col-md-6">
-                <h5 class="mb-2" style="font-weight: normal; color: #555;">Halo, Saya</h5>
-                <h1 class="display-3 fw-bolder mb-3" style="color: #2e4bff;">Feri Ferdianto</h1>
-                <h4 class="mb-4" style="color: #333;">Siswa SMKN 5 Malang | Jurusan PPLG</h4>
-                <p class="lead mb-4" style="color: #555; font-size: 1.1rem; line-height: 1.7;">
-                    Seorang pelajar yang ingin memperlajari dunia bahasa pemrograman dan terus belajar 
+                <h5 class="mb-2 home-subtitle">Halo, Saya</h5>
+                <h1 class="display-3 fw-bolder mb-3 color-primary">Feri Ferdianto</h1>
+                <h4 class="mb-4 color-dark">Siswa SMKN 5 Malang | Jurusan PPLG</h4>
+                <p class="lead mb-4 home-desc">
+                    Seorang pelajar yang ingin memperlajari dunia bahasa pemrograman dan terus belajar
                     teknologi baru seperti Ai, dan terus mengembangkan kemampuan skill coding.
                 </p>
                 <div class="d-flex flex-wrap gap-2">
-                    <a href="#projects" class="btn btn-lg px-4 buton" style="background-color: #2e4bff; color: white;">
+                    <a href="#projects" class="btn btn-lg px-4 btn-primary-main">
                         Lihat Projek
                     </a>
-                    <a href="#contact" class="btn btn-outline-primary btn-lg px-4" style="border-color: #2e4bff; color: #2e4bff; border-width: 2px;">
+                    <a href="#contact" class="btn btn-outline-primary btn-lg px-4 btn-outline-main">
                         Hubungi Saya
                     </a>
                 </div>
@@ -86,36 +86,36 @@
 <!--jumbotron split screen-->
 
 <!--about two column-->
-<section id="about" style="background-color: #498efb; padding: 80px 0;">
+<section id="about" class="section-about">
     <div class="container">
         <div class="row text-center mb-5">
             <div class="col">
-                <h1 class="fw-bolder" style="font-family: serif; color: white;">Tentang Saya</h1>
+                <h1 class="fw-bolder section-title-white">Tentang Saya</h1>
             </div>
         </div>
-        
+
         <div class="row g-4">
             <!-- Kolom Kiri - Tentang Diri & Hobi -->
             <div class="col-lg-6">
                 <div class="bg-white rounded shadow p-4 h-100">
-                    <h3 class="fw-bold mb-3" style="color: #2e4bff;">
+                    <h3 class="fw-bold mb-3 color-primary">
                         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-person-circle me-2" viewBox="0 0 16 16">
                             <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
                             <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
                         </svg>
                         Profil Singkat
                     </h3>
-                    <p class="mb-3 fs-5" style="line-height: 1.8;">
-                        Perkenalkan, nama saya <strong>Feri Ferdianto</strong>. Saya adalah siswa 
+                    <p class="mb-3 fs-5 lh-lg">
+                        Perkenalkan, nama saya <strong>Feri Ferdianto</strong>. Saya adalah siswa
                         <strong>SMKN 5 Malang</strong> jurusan <strong>PPLG (Pengembangan Perangkat Lunak dan Gim)</strong>.
                     </p>
-                    <p class="mb-4 fs-5" style="line-height: 1.8;">
-                        Saya sangat tertarik dengan dunia pemrograman web dan selalu antusias untuk 
-                        mempelajari teknologi baru. Saat ini saya fokus mengembangkan kemampuan 
+                    <p class="mb-4 fs-5 lh-lg">
+                        Saya sangat tertarik dengan dunia pemrograman web dan selalu antusias untuk
+                        mempelajari teknologi baru. Saat ini saya fokus mengembangkan kemampuan
                         frontend development.
                     </p>
-                    
-                    <h5 class="fw-bold mt-4 mb-3" style="color: #2e4bff;">Hobi & Minat:</h5>
+
+                    <h5 class="fw-bold mt-4 mb-3 color-primary">Hobi & Minat:</h5>
                     <ul class="list-unstyled fs-6">
                         <li class="mb-2">
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#2e4bff" class="bi bi-check-circle-fill me-2" viewBox="0 0 16 16">
@@ -138,46 +138,46 @@
                     </ul>
                 </div>
             </div>
-            
+
             <!-- Kolom Kanan - Technical Skills & Tools -->
             <div class="col-lg-6">
                 <div class="bg-white rounded shadow p-4 h-100">
-                    <h3 class="fw-bold mb-3" style="color: #2e4bff;">
+                    <h3 class="fw-bold mb-3 color-primary">
                         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-code-slash me-2" viewBox="0 0 16 16">
                             <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0"/>
                         </svg>
                         Kemampuan Teknis
                     </h3>
-                    
-                    <h5 class="fw-bold mb-3" style="color: #555;">Bahasa Pemrograman:</h5>
+
+                    <h5 class="fw-bold mb-3 color-muted">Bahasa Pemrograman:</h5>
                     <div class="row mb-4 text-center">
                         <div class="col-4 mb-3">
-                            <div class="p-3 rounded" style="background-color: #f8f9fa;">
-                                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" 
+                            <div class="p-3 rounded bg-light-gray">
+                                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg"
                                      alt="HTML" width="60px" class="mb-2">
                                 <p class="mb-0 fw-semibold">HTML5</p>
                             </div>
                         </div>
                         <div class="col-4 mb-3">
-                            <div class="p-3 rounded" style="background-color: #f8f9fa;">
-                                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" 
+                            <div class="p-3 rounded bg-light-gray">
+                                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg"
                                      alt="CSS" width="60px" class="mb-2">
                                 <p class="mb-0 fw-semibold">CSS3</p>
                             </div>
                         </div>
                         <div class="col-4 mb-3">
-                            <div class="p-3 rounded" style="background-color: #f8f9fa;">
-                                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" 
+                            <div class="p-3 rounded bg-light-gray">
+                                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg"
                                      alt="JavaScript" width="60px" class="mb-2">
                                 <p class="mb-0 fw-semibold">JavaScript</p>
                             </div>
                         </div>
                     </div>
-                    
-                    <h5 class="fw-bold mb-3" style="color: #555;">Tools & Framework:</h5>
+
+                    <h5 class="fw-bold mb-3 color-muted">Tools & Framework:</h5>
                     <div class="row">
                         <div class="col-6 mb-3">
-                            <div class="d-flex align-items-center p-2 rounded" style="background-color: #f8f9fa;">
+                            <div class="d-flex align-items-center p-2 rounded bg-light-gray">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#7952b3" class="bi bi-bootstrap-fill me-2" viewBox="0 0 16 16">
                                     <path d="M6.375 7.125V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375z"/>
                                     <path d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4zm1.06 12V3.545h3.399c1.587 0 2.543.809 2.543 2.11 0 .884-.65 1.675-1.483 1.816v.1c1.143.117 1.904.931 1.904 2.033 0 1.488-1.084 2.396-2.888 2.396z"/>
@@ -186,7 +186,7 @@
                             </div>
                         </div>
                         <div class="col-6 mb-3">
-                            <div class="d-flex align-items-center p-2 rounded" style="background-color: #f8f9fa;">
+                            <div class="d-flex align-items-center p-2 rounded bg-light-gray">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#F05032" class="bi bi-git me-2" viewBox="0 0 16 16">
                                     <path d="M15.698 7.287 8.712.302a1.03 1.03 0 0 0-1.457 0l-1.45 1.45 1.84 1.84a1.223 1.223 0 0 1 1.55 1.56l1.773 1.774a1.224 1.224 0 0 1 1.267 2.025 1.226 1.226 0 0 1-2.002-1.334L8.58 5.963v4.353a1.226 1.226 0 1 1-1.008-.036V5.887a1.226 1.226 0 0 1-.666-1.608L5.093 2.465l-4.79 4.79a1.03 1.03 0 0 0 0 1.457l6.986 6.986a1.03 1.03 0 0 0 1.457 0l6.953-6.953a1.03 1.03 0 0 0 0-1.457"/>
                                 </svg>
@@ -194,7 +194,7 @@
                             </div>
                         </div>
                         <div class="col-6 mb-3">
-                            <div class="d-flex align-items-center p-2 rounded" style="background-color: #f8f9fa;">
+                            <div class="d-flex align-items-center p-2 rounded bg-light-gray">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FF2D20" viewBox="0 0 24 24" class="me-2">
                                     <path d="M23.642 5.43a.364.364 0 0 1 .014.1v5.149c0 .135-.073.26-.189.326l-4.323 2.49v4.934a.378.378 0 0 1-.188.326L9.93 23.949a.316.316 0 0 1-.066.027c-.008.002-.016.008-.024.01a.348.348 0 0 1-.192 0c-.011-.002-.02-.008-.03-.012-.02-.008-.042-.014-.062-.025L.533 18.755a.376.376 0 0 1-.189-.326V2.974c0-.033.005-.066.014-.098.003-.012.01-.02.014-.032a.369.369 0 0 1 .023-.058c.004-.013.015-.022.023-.033l.033-.045c.012-.01.025-.018.037-.027.014-.012.027-.024.041-.034H.53L5.043.05a.375.375 0 0 1 .375 0L9.93 2.647h.002c.015.01.027.021.04.033l.038.027c.013.014.02.03.033.045.008.011.02.021.025.033.01.02.017.038.024.058.003.011.01.021.013.032.01.031.014.064.014.098v9.652l3.76-2.164V5.527c0-.033.004-.066.013-.098.003-.01.01-.02.013-.032a.487.487 0 0 1 .024-.059c.007-.012.018-.02.024-.033.012-.015.021-.03.033-.043.012-.012.025-.02.037-.028.014-.01.026-.023.041-.032h.001l4.513-2.598a.375.375 0 0 1 .375 0l4.513 2.598c.016.01.027.021.042.031.012.01.025.018.036.028.013.014.022.03.034.044.008.012.019.021.024.033.01.02.017.038.024.058.006.012.01.022.015.033zm-.74 5.032V6.179l-1.578.908-2.182 1.256v4.283zm-4.51 7.75v-4.287l-2.147 1.225-6.126 3.498v4.325zM1.093 3.624v14.588l8.273 4.761v-4.325l-4.322-2.445-.002-.003H5.04c-.014-.01-.025-.021-.04-.031-.011-.01-.024-.018-.035-.027l-.001-.002c-.013-.012-.021-.025-.031-.04-.01-.011-.021-.022-.028-.036h-.002c-.008-.014-.013-.031-.02-.047-.006-.016-.014-.027-.018-.043a.49.49 0 0 1-.008-.057c-.002-.014-.006-.027-.006-.041V5.789l-2.18-1.257zM5.23.81 1.47 2.974l3.76 2.164 3.758-2.164zm1.956 13.505 2.182-1.256V3.624l-1.58.91-2.182 1.255v9.435zm11.581-10.95-3.76 2.163 3.76 2.163 3.759-2.164zm-.376 4.978-2.182-1.256-1.579-.908v4.283l2.182 1.256 1.58.908zm-8.65 9.654 5.514-3.148 2.756-1.572-3.757-2.163-4.323 2.489-3.941 2.27z"/>
                                 </svg>
@@ -202,7 +202,7 @@
                             </div>
                         </div>
                         <div class="col-6 mb-3">
-                            <div class="d-flex align-items-center p-2 rounded" style="background-color: #f8f9fa;">
+                            <div class="d-flex align-items-center p-2 rounded bg-light-gray">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000" class="bi bi-github me-2" viewBox="0 0 16 16">
                                     <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
                                 </svg>
@@ -210,13 +210,13 @@
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="mt-3 p-3 rounded" style="background-color: #e6b449;">
+
+                    <div class="mt-3 p-3 rounded bg-accent">
                         <p class="mb-0 text-center">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-lightbulb-fill me-2" viewBox="0 0 16 16">
                                 <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m3 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1-.5-.5"/>
                             </svg>
-                            <em style="color: white;">Terus belajar dan berkembang</em>
+                            <em class="text-white">Terus belajar dan berkembang</em>
                         </p>
                     </div>
                 </div>
@@ -227,61 +227,57 @@
 <!--about two column-->
 
 <!--projects-->
-<section id="projects" style="background-color: #c3b2ec; padding: 80px 0;">
+<section id="projects" class="section-projects">
     <div class="container">
-            <div class="row text-center">
-                <div class="col">
-                    <h1 class="fw-bolder my-5" style="font-family: serif" style="background-color: #fcedc2">Projek</h1>
-                </div>
+        <div class="row text-center">
+            <div class="col">
+                <h1 class="fw-bolder my-5 section-title-projects">Projek</h1>
             </div>
         </div>
-        <div class="container">
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 text-center">
-                <!-- Card 1: Switch Case C++ -->
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <img src="assets/images/gamee.png" alt="project 2" class="bd-placeholder-img card-img-top" height="225" role="img" width="100%">
-                        <div class="card-body">
-                            <h3 class="text-center fw-bolder">Game: Rocket League</h3>
-                            <p class="card-text">Game ini dibuat saat tugas kelompok waktu semester ganjil kelas 11</p>
-                            <div class="d-flex justify-content-center align-items-center">
-                                <button type="button" onclick="changeWeb('cppkalku')" class="btn btn-sm btn-dark">
-                                    Lihat
-                                </button>
-                            </div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 text-center">
+            <!-- Card 1: Game Rocket League -->
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="assets/images/gamee.png" alt="project 2" class="bd-placeholder-img card-img-top" height="225" role="img" width="100%">
+                    <div class="card-body">
+                        <h3 class="text-center fw-bolder">Game: Rocket League</h3>
+                        <p class="card-text">Game ini dibuat saat tugas kelompok waktu semester ganjil kelas 11</p>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <button type="button" onclick="changeWeb('cppkalku')" class="btn btn-sm btn-dark">
+                                Lihat
+                            </button>
                         </div>
                     </div>
                 </div>
-                
-                <!-- Card 2: Game -->
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <img src="assets/images/kaggle.png" alt="project 3" class="bd-placeholder-img card-img-top" height="225" role="img" width="100%">
-                        <div class="card-body">
-                            <h3 class="text-center fw-bolder">Kaggle</h3>
-                            <p class="card-text">Ini adalah web dokumentasi dari pembelajaran materi Python & SQL dari Kaggle.</p>
-                            <div class="d-flex justify-content-center align-items-center">
-                                <button type="button" onclick="changeWeb('webku')" class="btn btn-sm btn-dark">
-                                    Lihat
-                                </button>
-                            </div>
+            </div>
+
+            <!-- Card 2: Kaggle -->
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="assets/images/kaggle.png" alt="project 3" class="bd-placeholder-img card-img-top" height="225" role="img" width="100%">
+                    <div class="card-body">
+                        <h3 class="text-center fw-bolder">Kaggle</h3>
+                        <p class="card-text">Ini adalah web dokumentasi dari pembelajaran materi Python & SQL dari Kaggle.</p>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <button type="button" onclick="changeWeb('webku')" class="btn btn-sm btn-dark">
+                                Lihat
+                            </button>
                         </div>
                     </div>
                 </div>
-                
-                <!-- Card 3: Halaman Login -->
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <img src="assets/images/laravel.png" alt="project 1" class="bd-placeholder-img card-img-top" height="225" role="img" width="100%">
-                        <div class="card-body">
-                            <h3 class="text-center fw-bolder">Laravel</h3>
-                            <p class="card-text">Tugas ini adalah kelompok yang dikerjakan sebelum ujian ganjil kelas 11
-                            </p>
-                            <div class="d-flex justify-content-center align-items-center">
-                                <button type="button" onclick="changeWeb('trim')" class="btn btn-sm btn-dark">
-                                    Lihat
-                                </button>
-                            </div>
+            </div>
+
+            <!-- Card 3: Laravel -->
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="assets/images/laravel.png" alt="project 1" class="bd-placeholder-img card-img-top" height="225" role="img" width="100%">
+                    <div class="card-body">
+                        <h3 class="text-center fw-bolder">Laravel</h3>
+                        <p class="card-text">Tugas ini adalah kelompok yang dikerjakan sebelum ujian ganjil kelas 11</p>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <button type="button" onclick="changeWeb('trim')" class="btn btn-sm btn-dark">
+                                Lihat
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -292,64 +288,59 @@
 <!--projects-->
 
 <!--pendidikan-->
-<section id="pendidikan" style="background-color: #c3b2ec; padding: 80px 0;">
+<section id="pendidikan" class="section-pendidikan">
     <div class="container">
         <div class="row text-center mb-5">
             <div class="col">
-                <h1 class="fw-bolder" style="font-family: serif;">Pendidikan</h1>
+                <h1 class="fw-bolder section-title-serif">Pendidikan</h1>
             </div>
         </div>
-        
+
         <div class="row justify-content-center">
             <div class="col-lg-8">
                 <!-- Timeline Item 1 - SMK -->
                 <div class="d-flex mb-4 position-relative">
-                    <div class="me-4 text-center" style="min-width: 80px;">
-                        <div class="rounded-circle d-inline-flex align-items-center justify-content-center shadow" 
-                             style="width: 60px; height: 60px; background-color: #2e4bff;">
+                    <div class="me-4 text-center timeline-col">
+                        <div class="timeline-circle timeline-circle-primary shadow">
                             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="white" class="bi bi-mortarboard-fill" viewBox="0 0 16 16">
                                 <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917z"/>
                                 <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466z"/>
                             </svg>
                         </div>
-                        <!-- Vertical Line -->
-                        <div class="mx-auto" style="width: 3px; height: 100px; background-color: #2e4bff;"></div>
+                        <div class="mx-auto timeline-line timeline-line-primary"></div>
                     </div>
                     <div class="flex-grow-1">
                         <div class="bg-white rounded shadow p-4">
-                            <span class="badge mb-2" style="background-color: #2e4bff;">2022 - Sekarang</span>
+                            <span class="badge mb-2 badge-primary">2022 - Sekarang</span>
                             <h4 class="fw-bold mb-2">SMKN 5 Malang</h4>
                             <p class="mb-0 text-muted">Jurusan: Pengembangan Perangkat Lunak dan Gim (PPLG)</p>
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Timeline Item 2 - SMP -->
                 <div class="d-flex mb-4 position-relative">
-                    <div class="me-4 text-center" style="min-width: 80px;">
-                        <div class="rounded-circle d-inline-flex align-items-center justify-content-center shadow" 
-                             style="width: 60px; height: 60px; background-color: #498efb;">
+                    <div class="me-4 text-center timeline-col">
+                        <div class="timeline-circle timeline-circle-secondary shadow">
                             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="white" class="bi bi-book-fill" viewBox="0 0 16 16">
                                 <path d="M8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"/>
                             </svg>
                         </div>
-                        <!-- Vertical Line -->
-                        <div class="mx-auto" style="width: 3px; height: 100px; background-color: #498efb;"></div>
+                        <div class="mx-auto timeline-line timeline-line-secondary"></div>
                     </div>
                     <div class="flex-grow-1">
                         <div class="bg-white rounded shadow p-4">
-                            <span class="badge mb-2" style="background-color: #498efb;">2019 - 2022</span>
+                            <span class="badge mb-2 badge-secondary">2019 - 2022</span>
                             <h4 class="fw-bold mb-2">SMPN 5 Malang</h4>
                             <p class="mb-0 text-muted">Sekolah Menengah Pertama</p>
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Timeline Item 3 - SD -->
                 <div class="d-flex position-relative">
-                    <div class="me-4 text-center" style="min-width: 80px;">
-                        <div class="rounded-circle d-inline-flex align-items-center justify-content-center shadow" 
-                             style="width: 60px; height: 60px; background-color: #e6b449;">
+                    <div class="me-4 text-center timeline-col">
+                        <div class="timeline-circle timeline-circle-accent shadow">
                             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="white" class="bi bi-house-fill" viewBox="0 0 16 16">
                                 <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293z"/>
                                 <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293z"/>
@@ -358,7 +349,7 @@
                     </div>
                     <div class="flex-grow-1">
                         <div class="bg-white rounded shadow p-4">
-                            <span class="badge mb-2" style="background-color: #e6b449;">2012 - 2019</span>
+                            <span class="badge mb-2 badge-accent">2012 - 2019</span>
                             <h4 class="fw-bold mb-2">SDN Lowokwaru 2 Malang</h4>
                             <p class="mb-0 text-muted">Sekolah Dasar</p>
                         </div>
@@ -369,7 +360,9 @@
     </div>
 </section>
 <!--pendidikan-->
-<section id="contact" style="background-color: #c3b2ec; padding: 80px 0;">
+
+<!--contact-->
+<section id="contact" class="section-contact">
     <div class="container col-xl-10 col-xxl-8 px-4">
         <div class="row align-items-center g-lg-5">
             <div class="col-lg-7 text-center text-lg-start">
@@ -390,12 +383,12 @@
                         <textarea class="form-control" id="message" placeholder="Pesan Anda" name="message" style="height: 100px" required></textarea>
                         <label for="message">Pesan</label>
                     </div>
-                    <button class="w-100 btn btn-lg" type="submit" id="submitBtn" style="background-color: #2e4bff; color: white;">Kirim</button>
+                    <button class="w-100 btn btn-lg btn-submit" type="submit" id="submitBtn">Kirim</button>
                     <hr class="my-4">
                     <small class="text-body-secondary">* Pesan ini akan terkirim ke Email saya, jadi cek kembali Email anda
                         jika ingin melihat balasan dari saya. Terima kasih sudah mengunjungi website saya!
                     </small>
-                    
+
                     <!-- Alert Success/Error -->
                     <div id="alertMessage" class="alert mt-3" style="display: none;" role="alert"></div>
                 </form>
@@ -403,30 +396,44 @@
         </div>
     </div>
 </section>
-<!--contacts-->
+<!--contact-->
 
 <!--footer-->
-<footer class="d-flex flex-wrap justify-content-between align-items-center py-4 border-top" style="background-color: #e6b449">
-    <div class="col-md-4 d-flex align-items-center">
-        <span class="mx-5 mb-3 mb-md-0 text-body-secondary">Dibuat oleh Feri</span>
+<footer class="footer">
+    <div class="container py-4">
+        <!-- Nama & Tagline -->
+        <div class="text-center mb-3">
+            <h5 class="footer-name">Feri Ferdianto</h5>
+            <p class="footer-tagline">Portofolio | SMKN 5 Malang</p>
+        </div>
+
+        <!-- Divider -->
+        <hr class="footer-divider">
+
+        <!-- Sosmed & Copyright -->
+        <div class="d-flex flex-wrap justify-content-between align-items-center">
+            <small class="footer-copy">© 2025 Feri Ferdianto. All rights reserved.</small>
+            <div class="footer-socials">
+                <a href="https://www.instagram.com/imnotferrriii/" class="footer-icon" aria-label="Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                    </svg>
+                </a>
+                <a href="https://www.tiktok.com/@haisayamenggunakanwangsa?is_from_webapp=1&sender_device=pc" class="footer-icon" aria-label="TikTok">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+                        <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+                    </svg>
+                </a>
+                <a href="https://github.com/Ferr-Hanni" class="footer-icon" aria-label="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
     </div>
-    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex mx-5">
-        <li class="ms-3">
-            <a class="text-body-secondary" href="https://www.instagram.com/imnotferrriii/" aria-label="Instagram">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
-                </svg>
-            </a>
-        </li>
-        <li class="ms-3">
-            <a class="text-body-secondary" href="https://github.com/Ferr-Hanni" aria-label="Github">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
-                </svg>
-            </a>
-        </li>
-    </ul>
 </footer>
 <!--footer-->
+
 </body>
 </html>

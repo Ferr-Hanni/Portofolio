@@ -1,4 +1,4 @@
-/* Navbar link hover effect */
+/* ===== NAVBAR STYLES ===== */
 .nav-link-hover {
     transition: ease-out 10ms;
     border-bottom: 2px solid rgba(237, 132, 12, 0);
@@ -9,16 +9,16 @@
     border-bottom: 2px solid #ed840c;
 }
 
-/* Button styling */
+/* ===== BUTTON STYLES ===== */
 .btn-primary-custom {
-    background-color: #e6b449
+    background-color: #e6b449;
 }
 
 .btn-primary-custom:hover {
-    background-color: #e6be5f
+    background-color: #e6be5f;
 }
 
-/* Heading shadow effect */
+/* ===== HEADING SHADOW ===== */
 .heading-shadow {
     transform: rotate(360deg);
 }
@@ -27,87 +27,7 @@
     transform: rotate(360deg);
 }
 
-/* Dropdown icon rotation */
-.dropdown-icon-rotate-on {
-    transform: rotate(180deg);
-    transition: ease-in 1s;
-}
-
-.dropdown-icon-rotate-off {
-    transform: rotate(0deg);
-    transition: ease-out 1s;
-}
-
-/* Navbar link hover effect */
-.nav-link-hover {
-    transition: ease-out 10ms;
-    border-bottom: 2px solid rgba(237, 132, 12, 0);
-}
-
-.nav-link-hover:hover {
-    transition: ease-in 10ms;
-    border-bottom: 2px solid #ed840c;
-}
-
-/* Button styling */
-.btn-primary-custom {
-    background-color: #e6b449
-}
-
-.btn-primary-custom:hover {
-    background-color: #e6be5f
-}
-
-/* Heading shadow effect */
-.heading-shadow {
-    transform: rotate(360deg);
-}
-
-.heading-shadow:hover {
-    transform: rotate(360deg);
-}
-
-/* Dropdown icon rotation */
-.dropdown-icon-rotate-on {
-    transform: rotate(180deg);
-    transition: ease-in 1s;
-}
-
-.dropdown-icon-rotate-off {
-    transform: rotate(0deg);
-    transition: ease-out 1s;
-}
-
-/* Navbar link hover effect */
-.nav-link-hover {
-    transition: ease-out 10ms;
-    border-bottom: 2px solid rgba(237, 132, 12, 0);
-}
-
-.nav-link-hover:hover {
-    transition: ease-in 10ms;
-    border-bottom: 2px solid #ed840c;
-}
-
-/* Button styling */
-.btn-primary-custom {
-    background-color: #e6b449
-}
-
-.btn-primary-custom:hover {
-    background-color: #e6be5f
-}
-
-/* Heading shadow effect */
-.heading-shadow {
-    transform: rotate(360deg);
-}
-
-.heading-shadow:hover {
-    transform: rotate(360deg);
-}
-
-/* Dropdown icon rotation */
+/* ===== DROPDOWN ICON ROTATION ===== */
 .dropdown-icon-rotate-on {
     transform: rotate(180deg);
     transition: ease-in 1s;
@@ -128,10 +48,9 @@
     background-color: rgba(25, 40, 180, 0.95);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    box-shadow: 0 4px 20px rgba(0,0,0,0.25) !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25) !important;
 }
 
-/* Navbar toggler no outline */
 .navbar-toggler:focus {
     box-shadow: none;
 }
@@ -139,8 +58,8 @@
 /* ===== DROPDOWN MENU STYLING ===== */
 .dropdown-menu {
     background-color: white;
-    border: 1px solid rgba(0,0,0,.15);
-    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    border: 1px solid rgba(0, 0, 0, .15);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
 }
 
 .dropdown-item {
@@ -153,7 +72,7 @@
     color: #2e4bff;
 }
 
-/* Mobile navbar dropdown fix */
+/* ===== MOBILE NAVBAR ===== */
 @media (max-width: 991px) {
     .navbar-collapse {
         background-color: rgba(30, 50, 200, 0.97);
@@ -162,11 +81,10 @@
         padding: 12px 16px 16px;
         margin-top: 8px;
         border-radius: 12px;
-        box-shadow: 0 8px 24px rgba(0,0,0,0.3);
-        /* smooth slide animation */
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
         transition: all 0.3s ease;
     }
-    
+
     .navbar-collapse .nav-link {
         padding: 10px 8px;
         border-radius: 8px;
@@ -175,62 +93,75 @@
 
     .navbar-collapse .nav-link:hover,
     .navbar-collapse .nav-link:focus {
-        background-color: rgba(255,255,255,0.12);
+        background-color: rgba(255, 255, 255, 0.12);
     }
-    
+
     .dropdown-menu {
         background-color: rgba(255, 255, 255, 0.96);
         border: none;
         border-radius: 10px;
         margin-top: 4px !important;
         margin-left: 0 !important;
-        box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
     }
-    
+
     .dropdown-item {
         padding: 12px 20px;
         font-size: 0.95rem;
         border-radius: 8px;
         transition: background-color 0.15s ease;
     }
-    
+
     .dropdown-divider {
-        border-color: rgba(0,0,0,.1);
+        border-color: rgba(0, 0, 0, .1);
     }
 }
 
-/* ===== RESPONSIVE MOBILE STYLES ===== */
-
-/* Jumbotron Split Screen */
+/* ===== RESPONSIVE: HERO / HOME ===== */
 @media (max-width: 768px) {
     #home .container {
         padding-top: 80px !important;
         padding-bottom: 40px !important;
     }
-    
+
     #home .row {
         min-height: auto !important;
     }
-    
+
     #home img {
         max-width: 250px !important;
         margin-bottom: 30px;
     }
-    
+
     #home h1 {
         font-size: 2.5rem !important;
     }
-    
+
     #home h4 {
         font-size: 1.2rem !important;
     }
-    
+
     #home p.lead {
         font-size: 1rem !important;
     }
 }
 
-/* About Section Two Column */
+@media (max-width: 576px) {
+    #home h1 {
+        font-size: 2rem !important;
+    }
+
+    #home h5 {
+        font-size: 1rem !important;
+    }
+
+    #home .btn-lg {
+        font-size: 1rem !important;
+        padding: 0.5rem 1.5rem !important;
+    }
+}
+
+/* ===== RESPONSIVE: ABOUT ===== */
 @media (max-width: 991px) {
     #about .row.g-4 {
         gap: 2rem !important;
@@ -241,339 +172,357 @@
     #about {
         padding: 60px 0 !important;
     }
-    
+
     #about h1 {
         font-size: 2rem !important;
     }
-    
+
     #about h3 {
         font-size: 1.5rem !important;
     }
-    
+
     #about .col-lg-6 .bg-white {
         padding: 1.5rem !important;
     }
-    
-    /* Skills icons smaller on mobile */
+
     #about .row.text-center img {
         width: 50px !important;
     }
 }
 
-/* Projects Section */
-@media (max-width: 768px) {
-    #projects {
-        padding: 60px 0 !important;
-    }
-    
-    #projects h1 {
-        font-size: 2rem !important;
-        margin-top: 2rem !important;
-        margin-bottom: 2rem !important;
-    }
-    
-    #projects .card h3 {
-        font-size: 1.3rem !important;
-    }
-}
-
-/* Pendidikan Timeline */
-@media (max-width: 768px) {
-    #pendidikan {
-        padding: 60px 0 !important;
-    }
-    
-    #pendidikan h1 {
-        font-size: 2rem !important;
-    }
-    
-    /* Timeline adjustments for mobile */
-    #pendidikan .d-flex .me-4 {
-        min-width: 60px !important;
-    }
-    
-    #pendidikan .rounded-circle {
-        width: 50px !important;
-        height: 50px !important;
-    }
-    
-    #pendidikan .rounded-circle svg {
-        width: 24px !important;
-        height: 24px !important;
-    }
-    
-    #pendidikan .mx-auto {
-        height: 80px !important;
-    }
-    
-    #pendidikan .bg-white {
-        padding: 1rem !important;
-    }
-    
-    #pendidikan h4 {
-        font-size: 1.2rem !important;
-    }
-    
-    #pendidikan .badge {
-        font-size: 0.8rem !important;
-    }
-}
-
-/* Contact Section */
-@media (max-width: 768px) {
-    #contact {
-        padding: 60px 0 !important;
-    }
-    
-    #contact h1 {
-        font-size: 2rem !important;
-    }
-    
-    #contact p {
-        font-size: 1rem !important;
-    }
-}
-
-/* Small mobile adjustments */
-@media (max-width: 576px) {
-    #home h1 {
-        font-size: 2rem !important;
-    }
-    
-    #home h5 {
-        font-size: 1rem !important;
-    }
-    
-    #home .btn-lg {
-        font-size: 1rem !important;
-        padding: 0.5rem 1.5rem !important;
-    }
-    
-    /* Timeline even more compact */
-    #pendidikan .d-flex .me-4 {
-        min-width: 50px !important;
-    }
-    
-    #pendidikan .rounded-circle {
-        width: 45px !important;
-        height: 45px !important;
-    }
-    
-    #pendidikan .rounded-circle svg {
-        width: 20px !important;
-        height: 20px !important;
-    }
-    
-    #pendidikan .mx-auto {
-        height: 70px !important;
-        width: 2px !important;
-    }
-}
-
-/* Extra responsive helpers */
 @media (max-width: 480px) {
-    .container {
-        padding-left: 15px !important;
-        padding-right: 15px !important;
-    }
-    
     #about .col-4 {
         flex: 0 0 33.333% !important;
         max-width: 33.333% !important;
     }
-    
+
     #about .col-6 {
         flex: 0 0 50% !important;
         max-width: 50% !important;
     }
 }
 
-
-/* ===== RESPONSIVE MOBILE STYLES ===== */
-
-/* Jumbotron Split Screen */
-@media (max-width: 768px) {
-    #home .container {
-        padding-top: 80px !important;
-        padding-bottom: 40px !important;
-    }
-    
-    #home .row {
-        min-height: auto !important;
-    }
-    
-    #home img {
-        max-width: 250px !important;
-        margin-bottom: 30px;
-    }
-    
-    #home h1 {
-        font-size: 2.5rem !important;
-    }
-    
-    #home h4 {
-        font-size: 1.2rem !important;
-    }
-    
-    #home p.lead {
-        font-size: 1rem !important;
-    }
-}
-
-/* About Section Two Column */
-@media (max-width: 991px) {
-    #about .row.g-4 {
-        gap: 2rem !important;
-    }
-}
-
-@media (max-width: 768px) {
-    #about {
-        padding: 60px 0 !important;
-    }
-    
-    #about h1 {
-        font-size: 2rem !important;
-    }
-    
-    #about h3 {
-        font-size: 1.5rem !important;
-    }
-    
-    #about .col-lg-6 .bg-white {
-        padding: 1.5rem !important;
-    }
-    
-    /* Skills icons smaller on mobile */
-    #about .row.text-center img {
-        width: 50px !important;
-    }
-}
-
-/* Projects Section */
+/* ===== RESPONSIVE: PROJECTS ===== */
 @media (max-width: 768px) {
     #projects {
         padding: 60px 0 !important;
     }
-    
+
     #projects h1 {
         font-size: 2rem !important;
         margin-top: 2rem !important;
         margin-bottom: 2rem !important;
     }
-    
+
     #projects .card h3 {
         font-size: 1.3rem !important;
     }
 }
 
-/* Pendidikan Timeline */
+/* ===== RESPONSIVE: PENDIDIKAN ===== */
 @media (max-width: 768px) {
     #pendidikan {
         padding: 60px 0 !important;
     }
-    
+
     #pendidikan h1 {
         font-size: 2rem !important;
     }
-    
-    /* Timeline adjustments for mobile */
+
     #pendidikan .d-flex .me-4 {
         min-width: 60px !important;
     }
-    
+
     #pendidikan .rounded-circle {
         width: 50px !important;
         height: 50px !important;
     }
-    
+
     #pendidikan .rounded-circle svg {
         width: 24px !important;
         height: 24px !important;
     }
-    
+
     #pendidikan .mx-auto {
         height: 80px !important;
     }
-    
+
     #pendidikan .bg-white {
         padding: 1rem !important;
     }
-    
+
     #pendidikan h4 {
         font-size: 1.2rem !important;
     }
-    
+
     #pendidikan .badge {
         font-size: 0.8rem !important;
     }
 }
 
-/* Contact Section */
-@media (max-width: 768px) {
-    #contact {
-        padding: 60px 0 !important;
-    }
-    
-    #contact h1 {
-        font-size: 2rem !important;
-    }
-    
-    #contact p {
-        font-size: 1rem !important;
-    }
-}
-
-/* Small mobile adjustments */
 @media (max-width: 576px) {
-    #home h1 {
-        font-size: 2rem !important;
-    }
-    
-    #home h5 {
-        font-size: 1rem !important;
-    }
-    
-    #home .btn-lg {
-        font-size: 1rem !important;
-        padding: 0.5rem 1.5rem !important;
-    }
-    
-    /* Timeline even more compact */
     #pendidikan .d-flex .me-4 {
         min-width: 50px !important;
     }
-    
+
     #pendidikan .rounded-circle {
         width: 45px !important;
         height: 45px !important;
     }
-    
+
     #pendidikan .rounded-circle svg {
         width: 20px !important;
         height: 20px !important;
     }
-    
+
     #pendidikan .mx-auto {
         height: 70px !important;
         width: 2px !important;
     }
 }
 
-/* Extra responsive helpers */
+/* ===== RESPONSIVE: CONTACT ===== */
+@media (max-width: 768px) {
+    #contact {
+        padding: 60px 0 !important;
+    }
+
+    #contact h1 {
+        font-size: 2rem !important;
+    }
+
+    #contact p {
+        font-size: 1rem !important;
+    }
+}
+
+/* ===== RESPONSIVE: GENERAL ===== */
 @media (max-width: 480px) {
     .container {
         padding-left: 15px !important;
         padding-right: 15px !important;
     }
-    
-    #about .col-4 {
-        flex: 0 0 33.333% !important;
-        max-width: 33.333% !important;
-    }
-    
-    #about .col-6 {
-        flex: 0 0 50% !important;
-        max-width: 50% !important;
-    }
+}
+
+/* ===== GLOBAL ===== */
+.body-serif {
+    font-family: serif;
+}
+
+/* ===== COLOR UTILITIES ===== */
+.color-primary {
+    color: #2e4bff;
+}
+
+.color-dark {
+    color: #333;
+}
+
+.color-muted {
+    color: #555;
+}
+
+/* ===== SECTION BACKGROUNDS ===== */
+.section-home {
+    background-color: #c3b2ec;
+    min-height: 100vh;
+    padding-bottom: 0;
+}
+
+.section-about {
+    background-color: #498efb;
+    padding: 80px 0;
+}
+
+.section-projects {
+    background-color: #c3b2ec;
+    padding: 80px 0;
+}
+
+.section-pendidikan {
+    background-color: #c3b2ec;
+    padding: 80px 0;
+}
+
+.section-contact {
+    background-color: #c3b2ec;
+    padding: 80px 0;
+}
+
+/* ===== SECTION TITLES ===== */
+.section-title-white {
+    font-family: serif;
+    color: white;
+}
+
+.section-title-serif {
+    font-family: serif;
+}
+
+.section-title-projects {
+    font-family: serif;
+}
+
+/* ===== HOME SECTION ===== */
+.home-container {
+    padding-top: 100px;
+    padding-bottom: 60px;
+}
+
+.home-row {
+    min-height: 85vh;
+}
+
+.home-subtitle {
+    font-weight: normal;
+    color: #555;
+}
+
+.home-desc {
+    color: #555;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.profile-img {
+    border-radius: 50%;
+    max-width: 350px;
+    width: 100%;
+    border: 6px solid #2e4bff;
+}
+
+/* ===== BUTTONS ===== */
+.btn-primary-main {
+    background-color: #2e4bff;
+    color: white;
+}
+
+.btn-primary-main:hover {
+    background-color: #1a35e0;
+    color: white;
+}
+
+.btn-outline-main {
+    border-color: #2e4bff;
+    color: #2e4bff;
+    border-width: 2px;
+}
+
+.btn-submit {
+    background-color: #2e4bff;
+    color: white;
+}
+
+.btn-submit:hover {
+    background-color: #1a35e0;
+    color: white;
+}
+
+/* ===== ABOUT SECTION HELPERS ===== */
+.bg-light-gray {
+    background-color: #f8f9fa;
+}
+
+.bg-accent {
+    background-color: #e6b449;
+}
+
+.lh-lg {
+    line-height: 1.8;
+}
+
+/* ===== TIMELINE ===== */
+.timeline-col {
+    min-width: 80px;
+}
+
+.timeline-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timeline-circle-primary {
+    background-color: #2e4bff;
+}
+
+.timeline-circle-secondary {
+    background-color: #498efb;
+}
+
+.timeline-circle-accent {
+    background-color: #e6b449;
+}
+
+.timeline-line {
+    width: 3px;
+    height: 100px;
+}
+
+.timeline-line-primary {
+    background-color: #2e4bff;
+}
+
+.timeline-line-secondary {
+    background-color: #498efb;
+}
+
+.badge-primary {
+    background-color: #2e4bff;
+}
+
+.badge-secondary {
+    background-color: #498efb;
+}
+
+.badge-accent {
+    background-color: #e6b449;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    background-color: #2e4bff;
+}
+
+.footer-name {
+    color: white;
+    font-family: serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.footer-tagline {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+    margin-bottom: 0;
+}
+
+.footer-divider {
+    border-color: rgba(255, 255, 255, 0.3);
+    margin: 12px 0;
+}
+
+.footer-copy {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.footer-socials {
+    display: flex;
+    gap: 12px;
+}
+
+.footer-icon {
+    color: white;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    opacity: 0.85;
+}
+
+.footer-icon:hover {
+    color: white;
+    opacity: 1;
+    transform: translateY(-3px);
 }
