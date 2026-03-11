@@ -211,3 +211,86 @@ body {
     box-shadow: 3px 3px 20px #b3b3b3;
     transition: ease 0.2s;
 }
+
+
+
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+    .display-1 {
+        font-size: calc(2.5rem + 5vw) !important;
+    }
+    
+    .hero-background {
+        background-attachment: scroll;
+    }
+    
+    .btn-border-hover {
+        margin: 5px !important;
+        padding: 8px 12px;
+    }
+    
+    .btn-email {
+        padding: 10px 20px;
+        white-space: normal;
+        word-break: break-all;
+        font-size: 14px;
+    }
+    
+    #about .row {
+        gap: 2rem;
+    }
+}
+
+/* Fix for very small devices */
+@media (max-width: 480px) {
+    .card-img-top {
+        height: 180px !important;
+    }
+    
+    h1.py-3 {
+        font-size: 2rem !important;
+    }
+    
+    .navbar-brand {
+        font-size: 1rem !important;
+    }
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Better card hover effects */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3) !important;
+}
+
+/* Fix for images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Better dropdown for mobile */
+@media (max-width: 991px) {
+    .dropdown-menu {
+        position: static !important;
+        float: none;
+        width: auto;
+        margin-top: 0;
+        background-color: transparent;
+        border: 0;
+        box-shadow: none;
+    }
+    
+    .dropdown-item {
+        color: #e0e0e0 !important;
+    }
+}
