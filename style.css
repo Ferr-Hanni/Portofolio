@@ -482,6 +482,15 @@
     background-color: #e6b449;
 }
 
+@media (max-width: 576px) {
+    .timeline-line {
+        display: none;
+    }
+    .timeline-col {
+        display: none; /* atau adjust layout */
+    }
+}
+
 /* ===== FOOTER ===== */
 .footer {
     background-color: #2e4bff;

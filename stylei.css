@@ -2,6 +2,7 @@
 body {
     background-color: #202020;
     font-family: serif;
+    padding-top: 76px;
 }
 
 /* Navbar with backdrop blur */
