@@ -224,9 +224,8 @@ document.addEventListener('DOMContentLoaded', function() {
     new Typed('.typed-text', {
         strings: [
             'Feri Ferdianto',
-            'Web Developer',
+            'Pemula Web Developer',
             'PPLG Student',
-            'UI/UX Enthusiast'
         ],
         typeSpeed: 100,
         backSpeed: 60,
