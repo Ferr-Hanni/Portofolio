@@ -48,14 +48,23 @@
 <!-- ===== HOME ===== -->
 <section id="home" class="hero-simple">
     <div class="container">
-        <div class="row min-vh-100 align-items-center">
-            <div class="col-lg-7 text-white">
+        <div class="row hero-row align-items-center g-5">
+            <!-- Kolom kiri: teks utama -->
+            <div class="col-lg-7 text-white hero-copy">
                 <span class="hero-subtitle mb-3 d-inline-block">Halo, Perkenalkan</span>
                 <h1 class="hero-title">Feri Ferdianto</h1>
+
+                <!-- Foto versi mobile: posisinya setelah nama agar alurnya lebih enak dibaca -->
+                <div class="hero-mobile-photo d-lg-none">
+                    <img src="assets/images/fotoku2.jpeg" alt="Feri Ferdianto" class="hero-photo">
+                </div>
+
                 <p class="hero-description my-4">
-                    Ini adalah halaman kedua <span class="text-accent">Portofolio</span> saya
+                    Ini adalah halaman kedua <span class="text-accent">Portofolio</span> saya,
+                    tempat saya menampilkan proyek, skill, sertifikat, dan perjalanan belajar sebagai siswa PPLG.
                 </p>
-                <div class="d-flex flex-wrap gap-3">
+
+                <div class="hero-actions d-flex flex-wrap gap-3">
                     <a href="#projects" class="btn btn-primary-dramatic">
                         Lihat Proyek <i class="fas fa-arrow-right ms-2"></i>
                     </a>
@@ -63,15 +72,38 @@
                         Hubungi Saya <i class="fas fa-paper-plane ms-2"></i>
                     </a>
                 </div>
+
                 <div class="hero-social mt-4">
-                    <a href="https://github.com/Ferr-Hanni" class="social-icon" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://www.instagram.com/imnotferrriii" class="social-icon" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.tiktok.com/@haisayamenggunakanwangsa" class="social-icon" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://github.com/Ferr-Hanni" class="social-icon" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/imnotferrriii" class="social-icon" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@haisayamenggunakanwangsa" class="social-icon" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
                 </div>
             </div>
-            <div class="col-lg-5 text-center mt-5 mt-lg-0">
-                <img src="assets/images/fotoku2.jpeg" alt="Feri Ferdianto" class="hero-photo">
+
+            <!-- Kolom kanan: foto desktop -->
+            <div class="col-lg-5 text-center hero-visual d-none d-lg-block">
+                <div class="hero-photo-wrap">
+                    <img src="assets/images/fotoku2.jpeg" alt="Feri Ferdianto" class="hero-photo">
+                </div>
                 <div class="hero-stats mt-4">
+                    <div class="stat-item">
+                        <span class="stat-number">3+</span>
+                        <span class="stat-label">Proyek</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">1+</span>
+                        <span class="stat-label">Tahun Belajar</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">Sertifikat</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Statistik versi mobile: diletakkan paling bawah agar tidak mengganggu foto dan teks -->
+            <div class="col-12 d-lg-none">
+                <div class="hero-stats mobile-stats">
                     <div class="stat-item">
                         <span class="stat-number">3+</span>
                         <span class="stat-label">Proyek</span>
