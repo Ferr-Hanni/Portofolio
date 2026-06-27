@@ -306,7 +306,7 @@
 }
 
 .section-about {
-    background-color: #498efb;
+    background: linear-gradient(135deg, #2e4bff 0%, #498efb 100%);
     padding: 80px 0;
 }
 
@@ -365,6 +365,75 @@
     max-width: 350px;
     width: 100%;
     border: 6px solid #2e4bff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+}
+
+.profile-img-wrapper {
+    position: relative;
+}
+
+.profile-img-wrapper:hover .profile-img {
+    transform: scale(1.02);
+    box-shadow: 0 8px 24px rgba(46, 75, 255, 0.3);
+}
+
+.btn-toggle-photo {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #2e4bff;
+    border: 2px solid white;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.btn-toggle-photo:hover {
+    background: #1a35e0;
+    transform: scale(1.15) rotate(180deg);
+    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.3);
+}
+
+.btn-toggle-photo i {
+    transition: transform 0.3s ease;
+}
+
+.btn-toggle-photo:active {
+    transform: scale(0.95);
+}
+
+/* ===== SKILLS CARD TOGGLE ANIMATION ===== */
+#skillsCard {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#toggleSkillsBtn {
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(46, 75, 255, 0.2);
+}
+
+#toggleSkillsBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(46, 75, 255, 0.3);
+}
+
+#toggleSkillsBtn i {
+    transition: transform 0.3s ease;
+}
+
+#toggleSkillsBtn:hover i {
+    transform: scale(1.1);
 }
 
 /* ===== BUTTONS ===== */
