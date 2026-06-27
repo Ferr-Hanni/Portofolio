@@ -28,8 +28,8 @@
             </a>
 
             <!-- Dropdown Hover Menu (tanpa JS, murni CSS hover) -->
-            <div class="dropdown-hover">
-                <button class="btn btn-menu-dropdown" type="button" id="menuDropdown">
+            <div class="dropdown-hover" id="navDropdownWrap">
+                <button class="btn btn-menu-dropdown" type="button" id="menuDropdown" aria-expanded="false">
                     Lebih Banyak<i class="fas fa-chevron-down"></i>
                 </button>
                 <ul class="dropdown-menu dropdown-menu-end">
@@ -90,10 +90,9 @@
                             <div class="about-avatar-ring">
                                 <div class="about-avatar-initials">FF</div>
                             </div>
-                            <div class="about-online-badge"><i class="fas fa-circle"></i> Open to Opportunities</div>
                         </div>
                         <h3 class="about-name mt-3">Feri Ferdianto</h3>
-                        <p class="about-role">Student &amp; Aspiring Developer</p>
+                        <p class="about-role">Student &amp; Web Development</p>
                         <p class="about-description">
                             Halo! Saya Feri Ferdianto, siswa SMKN 5 Malang jurusan Pengembangan Perangkat Lunak dan Gim (PPLG). Berawal dari ketertarikan mendalam pada teknologi, saya aktif mempelajari pemrograman web dan eksplorasi kecerdasan buatan (AI). Saya berkomitmen untuk terus meningkatkan skill, membangun proyek inovatif, serta mencari peluang kolaborasi baru di industri digital.
                         </p>
@@ -562,6 +561,42 @@
                 navbar?.classList.remove('scrolled');
             }
         });
+
+        // Dropdown Menu "Lebih Banyak" - klik/tap (fix untuk mobile, hover saja tidak cukup di HP)
+        const navDropdownWrap = document.getElementById('navDropdownWrap');
+        const navDropdownToggle = document.getElementById('menuDropdown');
+
+        if (navDropdownWrap && navDropdownToggle) {
+            navDropdownToggle.addEventListener('click', function (e) {
+                e.stopPropagation();
+                const isOpen = navDropdownWrap.classList.toggle('show');
+                navDropdownToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+            });
+
+            // Tutup menu setelah salah satu item diklik (smooth scroll ke section)
+            navDropdownWrap.querySelectorAll('.dropdown-item').forEach(function (item) {
+                item.addEventListener('click', function () {
+                    navDropdownWrap.classList.remove('show');
+                    navDropdownToggle.setAttribute('aria-expanded', 'false');
+                });
+            });
+
+            // Tutup menu kalau klik di luar area dropdown
+            document.addEventListener('click', function (e) {
+                if (!navDropdownWrap.contains(e.target)) {
+                    navDropdownWrap.classList.remove('show');
+                    navDropdownToggle.setAttribute('aria-expanded', 'false');
+                }
+            });
+
+            // Tutup menu dengan tombol Escape
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape') {
+                    navDropdownWrap.classList.remove('show');
+                    navDropdownToggle.setAttribute('aria-expanded', 'false');
+                }
+            });
+        }
 
         // Lightbox Functions
         function bukaLightbox(src, caption) {

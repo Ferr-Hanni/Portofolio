@@ -141,4 +141,64 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+    // Toggle Photo Function
+    let currentPhoto = 1; // 1 = fotoku.jpeg, 2 = Me.jpg
+    
+    function togglePhoto() {
+        const profileImage = document.getElementById('profileImage');
+        const photos = [
+            'assets/images/fotoku.jpeg',
+            'assets/images/Me.jpg'
+        ];
+        
+        // Toggle between photos
+        currentPhoto = currentPhoto === 1 ? 2 : 1;
+        profileImage.src = photos[currentPhoto - 1];
+        
+        // Add transition effect
+        profileImage.style.opacity = '0';
+        setTimeout(() => {
+            profileImage.style.opacity = '1';
+        }, 150);
+    }
+
+    // Toggle Skills Card Function
+    function toggleSkills() {
+        const skillsCard = document.getElementById('skillsCard');
+        const toggleBtn = document.getElementById('toggleSkillsBtn');
+        const toggleText = document.getElementById('toggleSkillsText');
+        const icon = toggleBtn.querySelector('i');
+        
+        if (skillsCard.style.display === 'none') {
+            // Show skills card with animation
+            skillsCard.style.display = 'flex';
+            setTimeout(() => {
+                skillsCard.style.opacity = '1';
+                skillsCard.style.transform = 'translateY(0)';
+            }, 10);
+            
+            // Update button text and icon
+            toggleText.textContent = 'Sembunyikan Kemampuan Teknis';
+            icon.classList.remove('fa-eye');
+            icon.classList.add('fa-eye-slash');
+            
+            // Smooth scroll to skills card
+            setTimeout(() => {
+                skillsCard.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }, 100);
+        } else {
+            // Hide skills card
+            skillsCard.style.opacity = '0';
+            skillsCard.style.transform = 'translateY(-20px)';
+            setTimeout(() => {
+                skillsCard.style.display = 'none';
+            }, 300);
+            
+            // Update button text and icon
+            toggleText.textContent = 'Lihat Kemampuan Teknis';
+            icon.classList.remove('fa-eye-slash');
+            icon.classList.add('fa-eye');
+        }
+    }
+
 });

@@ -1,3 +1,12 @@
+/* ===== GLOBAL SAFETY NET (MOBILE) ===== */
+html {
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+}
+
 /* ===== NAVBAR STYLES ===== */
 .nav-link-hover {
     transition: ease-out 10ms;
@@ -209,12 +218,12 @@
         min-width: 60px !important;
     }
 
-    #pendidikan .rounded-circle {
+    #pendidikan .timeline-circle {
         width: 50px !important;
         height: 50px !important;
     }
 
-    #pendidikan .rounded-circle svg {
+    #pendidikan .timeline-circle svg {
         width: 24px !important;
         height: 24px !important;
     }
@@ -238,21 +247,21 @@
 
 @media (max-width: 576px) {
     #pendidikan .d-flex .me-4 {
-        min-width: 50px !important;
+        min-width: 46px !important;
     }
 
-    #pendidikan .rounded-circle {
-        width: 45px !important;
-        height: 45px !important;
+    #pendidikan .timeline-circle {
+        width: 38px !important;
+        height: 38px !important;
     }
 
-    #pendidikan .rounded-circle svg {
-        width: 20px !important;
-        height: 20px !important;
+    #pendidikan .timeline-circle svg {
+        width: 18px !important;
+        height: 18px !important;
     }
 
-    #pendidikan .mx-auto {
-        height: 70px !important;
+    #pendidikan .mx-auto.timeline-line {
+        height: 50px !important;
         width: 2px !important;
     }
 }
@@ -530,9 +539,6 @@
 @media (max-width: 576px) {
     .timeline-line {
         display: none;
-    }
-    .timeline-col {
-        display: none; /* atau adjust layout */
     }
 }
 
